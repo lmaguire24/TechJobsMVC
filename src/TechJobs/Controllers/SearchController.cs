@@ -31,12 +31,11 @@ namespace TechJobs.Controllers
                 ViewBag.jobs = searchResults;
 
             }
+
+            ViewBag.columns = ListController.columnChoices;
+            ViewBag.title = "Search By ";
+            return View("Index");
         }
     } 
                        
-            ViewBag.columns = ListController.columnChoices;
-            //Line below is same as Console.Writeline() (same idea, last name/first name)
-            Viewbag.title= "Search By " 
-            return View("Index");
-    }
 }
