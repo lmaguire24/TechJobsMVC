@@ -24,12 +24,10 @@ namespace TechJobs.Controllers
                 ViewBag.jobs = searchResults;
             }
 
-
             else
             {
                 List<Dictionary<string, string>> searchResults = JobData.FindByColumnAndValue(searchType, searchTerm);
                 ViewBag.jobs = searchResults;
-
             }
 
             ViewBag.columns = ListController.columnChoices;
